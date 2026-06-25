@@ -1,0 +1,1187 @@
+{
+  "/american_football/football_team/current_roster./sports/sports_team_roster/position": {
+    "description": "Connects a football team roster entry to a player position.",
+    "head_relation_tail": "<team> has player at position <position>",
+    "reverse_relation": "<position> belongs to player on <team>"
+  },
+  "/award/award_category/category_of": {
+    "description": "Connects an award category to the award it belongs to.",
+    "head_relation_tail": "<award category> belongs to <award>",
+    "reverse_relation": "<award> contains <award category>"
+  },
+  "/award/award_category/disciplines_or_subjects": {
+    "description": "Connects an award category to the discipline or subject area it recognizes.",
+    "head_relation_tail": "<award category> is related to <discipline or subject>",
+    "reverse_relation": "<discipline or subject> is covered by <award category>"
+  },
+  "/award/award_category/nominees./award/award_nomination/nominated_for": {
+    "description": "Connects an award category to a work that has been nominated in that category.",
+    "head_relation_tail": "<award category> nominated <work>",
+    "reverse_relation": "<work> was nominated in <award category>"
+  },
+  "/award/award_category/winners./award/award_honor/award_winner": {
+    "description": "Connects an award category to a person or entity that has won in that category.",
+    "head_relation_tail": "<award category> awarded <winner>",
+    "reverse_relation": "<winner> won <award category>"
+  },
+  "/award/award_category/winners./award/award_honor/ceremony": {
+    "description": "Connects an award category to the award ceremony in which it was presented or awarded.",
+    "head_relation_tail": "<award category> was awarded at <ceremony>",
+    "reverse_relation": "<ceremony> presented <award category>"
+  },
+  "/award/award_ceremony/awards_presented./award/award_honor/award_winner": {
+    "description": "Connects an award ceremony to the winner of an award presented at that ceremony.",
+    "head_relation_tail": "<award ceremony> presented award to <winner>",
+    "reverse_relation": "<winner> received award at <award ceremony>"
+  },
+  "/award/award_ceremony/awards_presented./award/award_honor/honored_for": {
+    "description": "Connects an award ceremony to the work that was honored at that ceremony.",
+    "head_relation_tail": "<award ceremony> honored <work>",
+    "reverse_relation": "<work> was honored at <award ceremony>"
+  },
+  "/award/award_nominated_work/award_nominations./award/award_nomination/nominated_for": {
+    "description": "Connects a nominated work to another work that was nominated in the same award context.",
+    "head_relation_tail": "<work> was nominated alongside <work>",
+    "reverse_relation": "<work> shares nomination context with <work>"
+  },
+  "/award/award_nominee/award_nominations./award/award_nomination/award": {
+    "description": "Connects an award nominee to the award category they were nominated for.",
+    "head_relation_tail": "<award nominee> was nominated for <award>",
+    "reverse_relation": "<award> has nominee <award nominee>"
+  },
+  "/award/award_nominee/award_nominations./award/award_nomination/award_nominee": {
+    "description": "Connects an award nominee to another nominee within the same nomination context.",
+    "head_relation_tail": "<award nominee> was nominated alongside <award nominee>",
+    "reverse_relation": "<award nominee> shares nomination with <award nominee>"
+  },
+  "/award/award_nominee/award_nominations./award/award_nomination/nominated_for": {
+    "description": "Connects an award nominee to a work for which they received a nomination.",
+    "head_relation_tail": "<award nominee> was nominated for <work>",
+    "reverse_relation": "<work> received nomination involving <award nominee>"
+  },
+  "/award/award_winner/awards_won./award/award_honor/award_winner": {
+    "description": "Connects an award winner to another winner who received the same award honor.",
+    "head_relation_tail": "<award winner> won an award alongside <award winner>",
+    "reverse_relation": "<award winner> shares award with <award winner>"
+  },
+  "/award/award_winning_work/awards_won./award/award_honor/award": {
+    "description": "Connects a work to an award it has received.",
+    "head_relation_tail": "<work> received <award>",
+    "reverse_relation": "<award> was awarded to <work>"
+  },
+  "/award/award_winning_work/awards_won./award/award_honor/award_winner": {
+    "description": "Connects a work to a person who won an award for that work.",
+    "head_relation_tail": "<work> resulted in award win for <award winner>",
+    "reverse_relation": "<award winner> won award for <work>"
+  },
+  "/award/award_winning_work/awards_won./award/award_honor/honored_for": {
+    "description": "Connects a work to another work that was honored in the same award context.",
+    "head_relation_tail": "<work> was honored alongside <work>",
+    "reverse_relation": "<work> shares award recognition context with <work>"
+  },
+  "/award/hall_of_fame/inductees./award/hall_of_fame_induction/inductee": {
+    "description": "Connects a hall of fame to an inductee who has been inducted into it.",
+    "head_relation_tail": "<hall of fame> inducted <inductee>",
+    "reverse_relation": "<inductee> was inducted into <hall of fame>"
+  },
+  "/award/ranked_item/appears_in_ranked_lists./award/ranking/list": {
+    "description": "Connects a ranked item (such as a university) to a ranking list it appears in.",
+    "head_relation_tail": "<ranked item> appears in <ranking list>",
+    "reverse_relation": "<ranking list> includes <ranked item>"
+  },
+  "/base/aareas/schema/administrative_area/administrative_area_type": {
+    "description": "Connects an administrative area to its classification type.",
+    "head_relation_tail": "<administrative area> is classified as <administrative area type>",
+    "reverse_relation": "<administrative area type> classifies <administrative area>"
+  },
+  "/base/aareas/schema/administrative_area/administrative_parent": {
+    "description": "Connects an administrative area to its parent administrative region.",
+    "head_relation_tail": "<administrative area> is part of <administrative parent>",
+    "reverse_relation": "<administrative parent> contains <administrative area>"
+  },
+  "/base/aareas/schema/administrative_area/capital": {
+    "description": "Connects an administrative area to its capital city.",
+    "head_relation_tail": "<administrative area> has capital <city>",
+    "reverse_relation": "<city> is the capital of <administrative area>"
+  },
+  "/base/americancomedy/celebrity_impressionist/celebrities_impersonated": {
+    "description": "Connects a celebrity impressionist to a public figure they impersonate.",
+    "head_relation_tail": "<impressionist> impersonates <celebrity>",
+    "reverse_relation": "<celebrity> is impersonated by <impressionist>"
+  },
+  "/base/biblioness/bibs_location/country": {
+    "description": "Connects a location to the country it belongs to.",
+    "head_relation_tail": "<location> is located in <country>",
+    "reverse_relation": "<country> contains <location>"
+  },
+  "/base/biblioness/bibs_location/state": {
+    "description": "Connects a city or location to the state or administrative region it belongs to.",
+    "head_relation_tail": "<location> is located in <state>",
+    "reverse_relation": "<state> contains <location>"
+  },
+  "/base/culturalevent/event/entity_involved": {
+    "description": "Connects a historical or cultural event to an entity involved in it.",
+    "head_relation_tail": "<event> involves <entity>",
+    "reverse_relation": "<entity> participated in <event>"
+  },
+  "/base/eating/practicer_of_diet/diet": {
+    "description": "Connects a person to a diet they follow or practice.",
+    "head_relation_tail": "<person> follows <diet>",
+    "reverse_relation": "<diet> is followed by <person>"
+  },
+  "/base/localfood/seasonal_month/produce_available./base/localfood/produce_availability/seasonal_months": {
+    "description": "Connects a produce item to the months when it is seasonally available.",
+    "head_relation_tail": "<produce> is available in <seasonal month>",
+    "reverse_relation": "<month> is a season for <produce>"
+  },
+  "/base/locations/continents/countries_within": {
+    "description": "Connects a continent to the countries located within it.",
+    "head_relation_tail": "<continent> contains <country>",
+    "reverse_relation": "<country> is located in <continent>"
+  },
+  "/base/marchmadness/ncaa_basketball_tournament/seeds./base/marchmadness/ncaa_tournament_seed/team": {
+    "description": "Connects an NCAA tournament seed entry to the team assigned that seed.",
+    "head_relation_tail": "<tournament seed> is assigned to <team>",
+    "reverse_relation": "<team> has tournament seed in <NCAA tournament>"
+  },
+  "/base/petbreeds/city_with_dogs/top_breeds./base/petbreeds/dog_city_relationship/dog_breed": {
+    "description": "Connects a city to a dog breed that is commonly found or popular in that city.",
+    "head_relation_tail": "<city> has popular breed <dog breed>",
+    "reverse_relation": "<dog breed> is popular in <city>"
+  },
+  "/base/popstra/celebrity/breakup./base/popstra/breakup/participant": {
+    "description": "Connects a celebrity to a person involved in their breakup relationship.",
+    "head_relation_tail": "<celebrity> had breakup with <person>",
+    "reverse_relation": "<person> had breakup with <celebrity>"
+  },
+  "/base/popstra/celebrity/canoodled./base/popstra/canoodled/participant": {
+    "description": "Connects a celebrity to a person they were romantically linked or casually dated with.",
+    "head_relation_tail": "<celebrity> was romantically linked with <person>",
+    "reverse_relation": "<person> was romantically linked with <celebrity>"
+  },
+  "/base/popstra/celebrity/dated./base/popstra/dated/participant": {
+    "description": "Connects a celebrity to a person they have dated.",
+    "head_relation_tail": "<celebrity> dated <person>",
+    "reverse_relation": "<person> dated <celebrity>"
+  },
+  "/base/popstra/celebrity/friendship./base/popstra/friendship/participant": {
+    "description": "Connects a celebrity to another celebrity they are friends with.",
+    "head_relation_tail": "<celebrity> is friends with <celebrity>",
+    "reverse_relation": "<celebrity> is friends with <celebrity>"
+  },
+  "/base/popstra/location/vacationers./base/popstra/vacation_choice/vacationer": {
+    "description": "Connects a location to a person who has chosen it as a vacation destination.",
+    "head_relation_tail": "<location> is a vacation destination for <person>",
+    "reverse_relation": "<person> vacations in <location>"
+  },
+  "/base/saturdaynightlive/snl_cast_member/seasons./base/saturdaynightlive/snl_season_tenure/cast_members": {
+    "description": "Connects an SNL cast member to another cast member who appeared during the same season tenure.",
+    "head_relation_tail": "<cast member> appeared in SNL season alongside <cast member>",
+    "reverse_relation": "<cast member> appeared in SNL season alongside <cast member>"
+  },
+  "/base/schemastaging/organization_extra/phone_number./base/schemastaging/phone_sandbox/contact_category": {
+    "description": "Connects an organization’s phone contact to its contact category type.",
+    "head_relation_tail": "<organization> has contact number for <contact category>",
+    "reverse_relation": "<contact category> contact number belongs to <organization>"
+  },
+  "/base/schemastaging/organization_extra/phone_number./base/schemastaging/phone_sandbox/service_language": {
+    "description": "Connects an organization's service phone support to the language supported by that service channel.",
+    "head_relation_tail": "<organization> provides phone support in <language>",
+    "reverse_relation": "<language> is used for phone support by <organization>"
+  },
+  "/base/schemastaging/organization_extra/phone_number./base/schemastaging/phone_sandbox/service_location": {
+    "description": "Connects an organization's phone support service to the geographic region where that service is available.",
+    "head_relation_tail": "<organization> provides phone support in <service region>",
+    "reverse_relation": "<service region> is a service area of <organization>"
+  },
+  "/base/schemastaging/person_extra/net_worth./measurement_unit/dated_money_value/currency": {
+    "description": "Specifies the currency used for representing a person's net worth value.",
+    "head_relation_tail": "<person> has net worth measured in <currency>",
+    "reverse_relation": "<currency> is used to measure net worth of <person>"
+  },
+  "/base/x2010fifaworldcupsouthafrica/world_cup_squad/current_world_cup_squad./base/x2010fifaworldcupsouthafrica/current_world_cup_squad/current_club": {
+    "description": "Connects a national team squad member in a World Cup roster to the club they are currently playing for.",
+    "head_relation_tail": "<national team player> plays for <club>",
+    "reverse_relation": "<club> has player in <national team squad>"
+  },
+  "/baseball/baseball_team/team_stats./baseball/baseball_team_stats/season": {
+    "description": "Connects a baseball team’s statistics record to the season in which those stats were recorded.",
+    "head_relation_tail": "<baseball team> has team statistics in <season>",
+    "reverse_relation": "<season> contains team statistics for <baseball team>"
+  },
+  "/broadcast/content/artist": {
+    "description": "Connects a broadcast content entity (such as a radio station or program) to an artist featured in its content.",
+    "head_relation_tail": "<broadcast content> features music by <artist>",
+    "reverse_relation": "<artist> is featured on <broadcast content>"
+  },
+  "/business/business_operation/assets./measurement_unit/dated_money_value/currency": {
+    "description": "Specifies the currency used for representing a business operation's financial asset value over time.",
+    "head_relation_tail": "<business> has assets measured in <currency>",
+    "reverse_relation": "<currency> is used to measure assets of <business>"
+  },
+  "/business/business_operation/industry": {
+    "description": "Connects a business or organization to the industry it operates in.",
+    "head_relation_tail": "<business> operates in <industry>",
+    "reverse_relation": "<industry> includes businesses such as <business>"
+  },
+  "/business/business_operation/operating_income./measurement_unit/dated_money_value/currency": {
+    "description": "Specifies the currency used for reporting a business’s operating income over time.",
+    "head_relation_tail": "<business> reports operating income in <currency>",
+    "reverse_relation": "<currency> is used in operating income reports of <business>"
+  },
+  "/business/business_operation/revenue./measurement_unit/dated_money_value/currency": {
+    "description": "Specifies the currency used for reporting a business’s revenue over time.",
+    "head_relation_tail": "<business> reports revenue in <currency>",
+    "reverse_relation": "<currency> is used in revenue reporting of <business>"
+  },
+  "/business/job_title/people_with_this_title./business/employment_tenure/company": {
+    "description": "Connects a job title to companies where people holding that title have been employed.",
+    "head_relation_tail": "<job title> is held by employees at <company>",
+    "reverse_relation": "<company> employs people with job title <job title>"
+  },
+  "/celebrities/celebrity/celebrity_friends./celebrities/friendship/friend": {
+    "description": "Connects a celebrity to another celebrity they are known to be friends with.",
+    "head_relation_tail": "<celebrity> is friends with <celebrity>",
+    "reverse_relation": "<celebrity> is friends with <celebrity>"
+  },
+  "/celebrities/celebrity/sexual_relationships./celebrities/romantic_relationship/celebrity": {
+    "description": "Connects a celebrity to another celebrity they have had a romantic or sexual relationship with.",
+    "head_relation_tail": "<celebrity> had romantic relationship with <celebrity>",
+    "reverse_relation": "<celebrity> had romantic relationship with <celebrity>"
+  },
+  "/common/topic/webpage./common/webpage/category": {
+    "description": "Connects a topic to a webpage associated with it, categorized by type of website.",
+    "head_relation_tail": "<topic> has webpage of category <website category>",
+    "reverse_relation": "<website> category webpage is associated with <topic>"
+  },
+  "/dataworld/gardening_hint/split_to": {
+    "description": "Connects a dataset or entity to a split or subset it belongs to within a structured data grouping.",
+    "head_relation_tail": "<dataset or entity> is split into <subset>",
+    "reverse_relation": "<subset> belongs to split of <dataset or entity>"
+  },
+  "/education/educational_degree/people_with_this_degree./education/education/institution": {
+    "description": "Connects an educational degree to the institution where people obtained that degree.",
+    "head_relation_tail": "<degree> is awarded by <institution>",
+    "reverse_relation": "<institution> awards <degree>"
+  },
+  "/education/educational_degree/people_with_this_degree./education/education/major_field_of_study": {
+    "description": "Connects an educational degree to the field of study associated with people who hold that degree.",
+    "head_relation_tail": "<degree> is associated with <field of study>",
+    "reverse_relation": "<field of study> is commonly part of <degree>"
+  },
+  "/education/educational_degree/people_with_this_degree./education/education/student": {
+    "description": "Connects an educational degree to a person who has earned or is associated as a student of that degree program.",
+    "head_relation_tail": "<degree> is held by <student>",
+    "reverse_relation": "<student> has degree <degree>"
+  },
+  "/education/educational_institution/campuses": {
+    "description": "Connects an educational institution to its physical campuses.",
+    "head_relation_tail": "<educational institution> has campus <campus>",
+    "reverse_relation": "<campus> belongs to <educational institution>"
+  },
+  "/education/educational_institution/colors": {
+    "description": "Connects an educational institution to its official colors.",
+    "head_relation_tail": "<institution> has official color <color>",
+    "reverse_relation": "<color> is an official color of <institution>"
+  },
+  "/education/educational_institution/school_type": {
+    "description": "Indicates the type classification of an educational institution.",
+    "head_relation_tail": "<institution> is a <school type>",
+    "reverse_relation": "<school type> includes institutions such as <institution>"
+  },
+  "/education/educational_institution/students_graduates./education/education/major_field_of_study": {
+    "description": "Connects an educational institution to the major field of study pursued by its students or graduates.",
+    "head_relation_tail": "<institution> has students studying <field of study>",
+    "reverse_relation": "<field of study> is studied at <institution>"
+  },
+  "/education/educational_institution/students_graduates./education/education/student": {
+    "description": "Connects an educational institution to a person who studied or graduated from it.",
+    "head_relation_tail": "<institution> has student <person>",
+    "reverse_relation": "<person> studied at <institution>"
+  },
+  "/education/educational_institution_campus/educational_institution": {
+    "description": "Connects a campus to the educational institution it belongs to.",
+    "head_relation_tail": "<campus> belongs to <educational institution>",
+    "reverse_relation": "<educational institution> has campus <campus>"
+  },
+  "/education/field_of_study/students_majoring./education/education/major_field_of_study": {
+    "description": "Connects a field of study to the major field of study pursued by students in that domain.",
+    "head_relation_tail": "<field of study> includes students majoring in <major field>",
+    "reverse_relation": "<major field> is part of <field of study>"
+  },
+  "/education/field_of_study/students_majoring./education/education/student": {
+    "description": "Connects a field of study to a student who is majoring in or associated with that field.",
+    "head_relation_tail": "<field of study> has student <person>",
+    "reverse_relation": "<person> majors in <field of study>"
+  },
+  "/education/university/domestic_tuition./measurement_unit/dated_money_value/currency": {
+    "description": "Specifies the currency used for reporting domestic tuition fees at a university.",
+    "head_relation_tail": "<university> charges domestic tuition in <currency>",
+    "reverse_relation": "<currency> is used for domestic tuition at <university>"
+  },
+  "/education/university/fraternities_and_sororities": {
+    "description": "Connects a university to fraternities or sororities that are present on its campus.",
+    "head_relation_tail": "<university> has fraternity/sorority <fraternity or sorority>",
+    "reverse_relation": "<fraternity or sorority> is present at <university>"
+  },
+  "/education/university/international_tuition./measurement_unit/dated_money_value/currency": {
+    "description": "Specifies the currency used for reporting international tuition fees at a university.",
+    "head_relation_tail": "<university> charges international tuition in <currency>",
+    "reverse_relation": "<currency> is used for international tuition at <university>"
+  },
+  "/education/university/local_tuition./measurement_unit/dated_money_value/currency": {
+    "description": "Specifies the currency used for reporting local tuition fees at a university.",
+    "head_relation_tail": "<university> charges local tuition in <currency>",
+    "reverse_relation": "<currency> is used for local tuition at <university>"
+  },
+  "/film/actor/dubbing_performances./film/dubbing_performance/language": {
+    "description": "Indicates the language used in an actor's dubbing performance for a film or media role.",
+    "head_relation_tail": "<actor> performs dubbing in <language>",
+    "reverse_relation": "<language> is used in dubbing performances of <actor>"
+  },
+  "/film/actor/film./film/performance/film": {
+    "description": "Connects an actor (or filmmaker involved in acting credits) to a film they participated in.",
+    "head_relation_tail": "<person> acted in <film>",
+    "reverse_relation": "<film> features <person>"
+  },
+  "/film/actor/film./film/performance/special_performance_type": {
+    "description": "Indicates a special type of performance associated with an actor’s role in a film (e.g., deleted scenes, cameos, or extended cuts).",
+    "head_relation_tail": "<actor> has special performance type <type>",
+    "reverse_relation": "special performance <type> applies to <actor>"
+  },
+  "/film/director/film": {
+    "description": "Connects a film director to a film they have directed or contributed to as a director.",
+    "head_relation_tail": "<director> directed <film>",
+    "reverse_relation": "<film> was directed by <director>"
+  },
+  "/film/film/cinematography": {
+    "description": "Connects a film to its cinematographer responsible for its visual photography.",
+    "head_relation_tail": "<film> has cinematography by <cinematographer>",
+    "reverse_relation": "<cinematographer> worked on cinematography for <film>"
+  },
+  "/film/film/costume_design_by": {
+    "description": "Connects a film to the costume designer responsible for its wardrobe and character clothing design.",
+    "head_relation_tail": "<film> has costume design by <costume designer>",
+    "reverse_relation": "<costume designer> designed costumes for <film>"
+  },
+  "/film/film/country": {
+    "description": "Indicates the country of origin of a film.",
+    "head_relation_tail": "<film> was produced in <country>",
+    "reverse_relation": "<country> is country of origin of <film>"
+  },
+  "/film/film/distributors./film/film_film_distributor_relationship/film_distribution_medium": {
+    "description": "Indicates the medium through which a film is distributed by a distributor.",
+    "head_relation_tail": "<film> is distributed via <distribution medium>",
+    "reverse_relation": "<distribution medium> is used to distribute <film>"
+  },
+  "/film/film/distributors./film/film_film_distributor_relationship/region": {
+    "description": "Indicates the geographic region where a film distributor released or distributed a film.",
+    "head_relation_tail": "<film> is distributed in <region>",
+    "reverse_relation": "<region> distributes <film>"
+  },
+  "/film/film/dubbing_performances./film/dubbing_performance/actor": {
+    "description": "Connects a film to an actor who performed dubbing for it in a specific language version.",
+    "head_relation_tail": "<film> has dubbing performed by <actor>",
+    "reverse_relation": "<actor> performed dubbing for <film>"
+  },
+  "/film/film/edited_by": {
+    "description": "Connects a film to the editor responsible for assembling and cutting the final version.",
+    "head_relation_tail": "<film> was edited by <editor>",
+    "reverse_relation": "<editor> edited <film>"
+  },
+  "/film/film/estimated_budget./measurement_unit/dated_money_value/currency": {
+    "description": "Specifies the currency used for representing a film's estimated production budget.",
+    "head_relation_tail": "<film> has estimated budget measured in <currency>",
+    "reverse_relation": "<currency> is used to measure budget of <film>"
+  },
+  "/film/film/executive_produced_by": {
+    "description": "Connects a film to the executive producer responsible for overseeing production and financing aspects.",
+    "head_relation_tail": "<film> is executive produced by <producer>",
+    "reverse_relation": "<producer> executive produced <film>"
+  },
+  "/film/film/featured_film_locations": {
+    "description": "Indicates real-world locations that are prominently featured in a film’s scenes or setting.",
+    "head_relation_tail": "<film> features location <place>",
+    "reverse_relation": "<place> is featured in <film>"
+  },
+  "/film/film/film_art_direction_by": {
+    "description": "Connects a film to the art director responsible for its visual design and overall art direction.",
+    "head_relation_tail": "<film> has art direction by <art director>",
+    "reverse_relation": "<art director> worked on art direction for <film>"
+  },
+  "/film/film/film_festivals": {
+    "description": "Connects a film to film festivals where it was screened or officially featured.",
+    "head_relation_tail": "<film> was shown at <film festival>",
+    "reverse_relation": "<film festival> featured <film>"
+  },
+  "/film/film/film_format": {
+    "description": "Indicates the film format or film stock used in the production of a movie.",
+    "head_relation_tail": "<film> was shot in <film format>",
+    "reverse_relation": "<film format> was used in <film>"
+  },
+  "/film/film/film_production_design_by": {
+    "description": "Connects a film to its production designer responsible for the overall visual concept and set design.",
+    "head_relation_tail": "<film> has production design by <production designer>",
+    "reverse_relation": "<production designer> designed production for <film>"
+  },
+  "/film/film/genre": {
+    "description": "Indicates the genre classification of a film.",
+    "head_relation_tail": "<film> belongs to genre <genre>",
+    "reverse_relation": "<genre> includes film <film>"
+  },
+  "/film/film/language": {
+    "description": "Indicates the primary language(s) spoken or used in a film.",
+    "head_relation_tail": "<film> is in <language>",
+    "reverse_relation": "<language> is used in <film>"
+  },
+  "/film/film/music": {
+    "description": "Connects a film to its composer responsible for the musical score.",
+    "head_relation_tail": "<film> has music composed by <composer>",
+    "reverse_relation": "<composer> composed music for <film>"
+  },
+  "/film/film/other_crew./film/film_crew_gig/crewmember": {
+    "description": "Connects a film to a non-primary crew member involved in its production in any supporting role.",
+    "head_relation_tail": "<film> has crew member <person>",
+    "reverse_relation": "<person> worked on crew for <film>"
+  },
+  "/film/film/other_crew./film/film_crew_gig/film_crew_role": {
+    "description": "Indicates the specific crew role held by a person in a film’s production (non-director, non-actor roles).",
+    "head_relation_tail": "<film> has crew role <role>",
+    "reverse_relation": "<role> is part of crew roles in <film>"
+  },
+  "/film/film/personal_appearances./film/personal_film_appearance/person": {
+    "description": "Connects a film to a real-life person who appears as themselves in the film.",
+    "head_relation_tail": "<film> features appearance by <person>",
+    "reverse_relation": "<person> appears as themselves in <film>"
+  },
+  "/film/film/prequel": {
+    "description": "Connects a film to an earlier film that precedes it in the same narrative franchise.",
+    "head_relation_tail": "<film> is a prequel to <film>",
+    "reverse_relation": "<film> is sequel/predecessor relationship with <film>"
+  },
+  "/film/film/produced_by": {
+    "description": "Connects a film to its producer responsible for overseeing production, financing, and coordination.",
+    "head_relation_tail": "<film> is produced by <producer>",
+    "reverse_relation": "<producer> produced <film>"
+  },
+  "/film/film/production_companies": {
+    "description": "Connects a film to the production companies involved in its creation and financing.",
+    "head_relation_tail": "<film> is produced by <production company>",
+    "reverse_relation": "<production company> produced <film>"
+  },
+  "/film/film/release_date_s./film/film_regional_release_date/film_regional_debut_venue": {
+    "description": "Indicates the venue or festival where a film had its regional or official debut.",
+    "head_relation_tail": "<film> had its debut at <venue>",
+    "reverse_relation": "<venue> hosted debut of <film>"
+  },
+  "/film/film/release_date_s./film/film_regional_release_date/film_release_distribution_medium": {
+    "description": "Indicates the distribution medium used for a film’s regional release (e.g., DVD, Blu-ray, theatrical).",
+    "head_relation_tail": "<film> was released via <distribution medium>",
+    "reverse_relation": "<distribution medium> was used to release <film>"
+  },
+  "/film/film/release_date_s./film/film_regional_release_date/film_release_region": {
+    "description": "Indicates the geographic region where a film was released.",
+    "head_relation_tail": "<film> was released in <region>",
+    "reverse_relation": "<region> is a release market for <film>"
+  },
+  "/film/film/runtime./film/film_cut/film_release_region": {
+    "description": "Indicates the release region associated with a specific cut or runtime version of a film.",
+    "head_relation_tail": "<film> has runtime cut released in <region>",
+    "reverse_relation": "<region> has film release cut of <film>"
+  },
+  "/film/film/story_by": {
+    "description": "Connects a film to the person credited with writing the original story.",
+    "head_relation_tail": "<film> has story by <writer>",
+    "reverse_relation": "<writer> wrote story for <film>"
+  },
+  "/film/film/written_by": {
+    "description": "Connects a film to the writer(s) who wrote its screenplay or script.",
+    "head_relation_tail": "<film> was written by <writer>",
+    "reverse_relation": "<writer> wrote <film>"
+  },
+  "/film/film_distributor/films_distributed./film/film_film_distributor_relationship/film": {
+    "description": "Connects a film distributor to a film that it has distributed.",
+    "head_relation_tail": "<distributor> distributed <film>",
+    "reverse_relation": "<film> was distributed by <distributor>"
+  },
+  "/film/film_set_designer/film_sets_designed": {
+    "description": "Connects a film set designer to films whose sets they designed.",
+    "head_relation_tail": "<set designer> designed sets for <film>",
+    "reverse_relation": "<film> had set design by <set designer>"
+  },
+  "/film/film_subject/films": {
+    "description": "Connects a subject (such as a historical event) to films that are about it.",
+    "head_relation_tail": "<historical event> is subject of <film>",
+    "reverse_relation": "<film> is about <historical event>"
+  },
+  "/film/person_or_entity_appearing_in_film/films./film/personal_film_appearance/type_of_appearance": {
+    "description": "Indicates the type of appearance a person or entity has in a film (e.g., interview, cameo, role).",
+    "head_relation_tail": "<person or entity> appears as <type of appearance>",
+    "reverse_relation": "<type of appearance> is an appearance role of <person or entity>"
+  },
+  "/film/special_film_performance_type/film_performance_type./film/performance/film": {
+    "description": "Connects a special film performance type (such as voice acting category) to films where it is used.",
+    "head_relation_tail": "<performance type> is associated with <film>",
+    "reverse_relation": "<film> features <performance type>"
+  },
+  "/food/food/nutrients./food/nutrition_fact/nutrient": {
+    "description": "Connects a food item to its constituent nutrients.",
+    "head_relation_tail": "<food> contains nutrient <nutrient>",
+    "reverse_relation": "<nutrient> is found in <food>"
+  },
+  "/government/government_office_category/officeholders./government/government_position_held/jurisdiction_of_office": {
+    "description": "Links a government office or position to the jurisdiction where it is held.",
+    "head_relation_tail": "<government office> has jurisdiction <country or region>",
+    "reverse_relation": "<country or region> has government office <government office>"
+  },
+  "/government/governmental_body/members./government/government_position_held/legislative_sessions": {
+    "description": "Connects a governmental body or its members to the legislative sessions in which they serve.",
+    "head_relation_tail": "<governmental body> participates in <legislative session>",
+    "reverse_relation": "<legislative session> includes members of <governmental body>>"
+  },
+  "/government/legislative_session/members./government/government_position_held/district_represented": {
+    "description": "Indicates the district or region represented by members of a legislative session.",
+    "head_relation_tail": "<legislative session member> represents <district or region>",
+    "reverse_relation": "<district or region> is represented in <legislative session>"
+  },
+  "/government/legislative_session/members./government/government_position_held/legislative_sessions": {
+    "description": "Links a legislative session member to the legislative sessions in which they served.",
+    "head_relation_tail": "<legislative session member> serves in <legislative session>",
+    "reverse_relation": "<legislative session> includes <legislative session member>>"
+  },
+  "/government/political_party/politicians_in_this_party./government/political_party_tenure/politician": {
+    "description": "Connects a political party to politicians who have been members of that party.",
+    "head_relation_tail": "<political party> has politician member <politician>",
+    "reverse_relation": "<politician> is/was member of <political party>"
+  },
+  "/government/politician/government_positions_held./government/government_position_held/basic_title": {
+    "description": "Indicates the official government title held by a politician in a given position.",
+    "head_relation_tail": "<politician> held government position <title>",
+    "reverse_relation": "government position <title> is held by <politician>"
+  },
+  "/government/politician/government_positions_held./government/government_position_held/jurisdiction_of_office": {
+    "description": "Links a political position held by a politician to the jurisdiction in which it applies.",
+    "head_relation_tail": "<politician> held office in <jurisdiction>",
+    "reverse_relation": "<jurisdiction> had political office held by <politician>"
+  },
+  "/government/politician/government_positions_held./government/government_position_held/legislative_sessions": {
+    "description": "Connects a political position held by a politician to the legislative sessions during which they served.",
+    "head_relation_tail": "<politician> served in <legislative session>",
+    "reverse_relation": "<legislative session> includes service of <politician>"
+  },
+  "/ice_hockey/hockey_team/current_roster./sports/sports_team_roster/position": {
+    "description": "Connects a hockey team to the playing position of players on its current roster.",
+    "head_relation_tail": "<hockey team> has players in position <position>",
+    "reverse_relation": "players in position <position> play for <hockey team>"
+  },
+  "/influence/influence_node/influenced_by": {
+    "description": "Indicates that a person or creative work was influenced by another person or source.",
+    "head_relation_tail": "<person or work> is influenced by <person or source>",
+    "reverse_relation": "<person or source> influences <person or work>"
+  },
+  "/influence/influence_node/peers./influence/peer_relationship/peers": {
+    "description": "Connects an influential person to other peers who are considered contemporaries or collaborators in the same domain.",
+    "head_relation_tail": "<person> is a peer of <person>",
+    "reverse_relation": "<person> is a peer of <person>"
+  },
+  "/language/human_language/countries_spoken_in": {
+    "description": "Indicates the countries where a human language is spoken.",
+    "head_relation_tail": "<language> is spoken in <country>",
+    "reverse_relation": "<country> uses <language>"
+  },
+  "/location/administrative_division/country": {
+    "description": "Connects an administrative division (such as a city or region) to the country it belongs to.",
+    "head_relation_tail": "<administrative division> is located in <country>",
+    "reverse_relation": "<country> contains <administrative division>"
+  },
+  "/location/administrative_division/first_level_division_of": {
+    "description": "Indicates that a first-level administrative division belongs to a country.",
+    "head_relation_tail": "<state or first-level division> is part of <country>",
+    "reverse_relation": "<country> contains <state or first-level division>"
+  },
+  "/location/capital_of_administrative_division/capital_of./location/administrative_division_capital_relationship/administrative_division": {
+    "description": "Connects a capital city to the administrative division it serves as the capital of.",
+    "head_relation_tail": "<capital city> is the capital of <administrative division>",
+    "reverse_relation": "<administrative division> has capital <capital city>"
+  },
+  "/location/country/capital": {
+    "description": "Connects a country to its capital city.",
+    "head_relation_tail": "<country> has capital <city>",
+    "reverse_relation": "<city> is the capital of <country>"
+  },
+  "/location/country/form_of_government": {
+    "description": "Indicates the type of government a country has.",
+    "head_relation_tail": "<country> has form of government <government type>",
+    "reverse_relation": "<government type> applies to <country>"
+  },
+  "/location/country/official_language": {
+    "description": "Indicates the official language(s) of a country.",
+    "head_relation_tail": "<country> has official language <language>",
+    "reverse_relation": "<language> is official language of <country>"
+  },
+  "/location/country/second_level_divisions": {
+    "description": "Connects a country to its second-level administrative divisions such as counties.",
+    "head_relation_tail": "<country> contains second-level division <county or equivalent>",
+    "reverse_relation": "<county or equivalent> is located in <country>"
+  },
+  "/location/hud_county_place/county": {
+    "description": "Connects a city or place to the county in which it is located.",
+    "head_relation_tail": "<city or place> is located in <county>",
+    "reverse_relation": "<county> contains <city or place>"
+  },
+  "/location/hud_county_place/place": {
+    "description": "Represents a HUD county place entry linking a place entity to itself or its canonical place identifier within the HUD dataset.",
+    "head_relation_tail": "<place entity> corresponds to <place>",
+    "reverse_relation": "<place> corresponds to <place entity>"
+  },
+  "/location/hud_foreclosure_area/estimated_number_of_mortgages./measurement_unit/dated_integer/source": {
+    "description": "Indicates the source organization of a dated integer measurement related to estimated mortgages in a foreclosure area.",
+    "head_relation_tail": "<foreclosure area metric> has data source <organization>",
+    "reverse_relation": "<organization> provides data for <foreclosure area metric>"
+  },
+  "/location/location/adjoin_s./location/adjoining_relationship/adjoins": {
+    "description": "Indicates that two geographic locations share a border or adjacency relationship.",
+    "head_relation_tail": "<location> adjoins <location>",
+    "reverse_relation": "<location> adjoins <location>"
+  },
+  "/location/location/contains": {
+    "description": "Indicates that a location contains another geographic entity within its boundaries.",
+    "head_relation_tail": "<larger location> contains <smaller location>",
+    "reverse_relation": "<smaller location> is located in <larger location>"
+  },
+  "/location/location/partially_contains": {
+    "description": "Indicates that a geographic entity partially contains or overlaps with another geographic feature.",
+    "head_relation_tail": "<location> partially contains <geographic feature>",
+    "reverse_relation": "<geographic feature> is partially located in <location>"
+  },
+  "/location/location/time_zones": {
+    "description": "Indicates the time zone(s) associated with a geographic location.",
+    "head_relation_tail": "<location> is in time zone <time zone>",
+    "reverse_relation": "<time zone> applies to <location>"
+  },
+  "/location/statistical_region/gdp_nominal./measurement_unit/dated_money_value/currency": {
+    "description": "Indicates the currency used for reporting the nominal GDP of a statistical region.",
+    "head_relation_tail": "<statistical region> has GDP reported in <currency>",
+    "reverse_relation": "<currency> is used for GDP reporting in <statistical region>"
+  },
+  "/location/statistical_region/gdp_nominal_per_capita./measurement_unit/dated_money_value/currency": {
+    "description": "Indicates the currency used to report nominal GDP per capita for a statistical region.",
+    "head_relation_tail": "<statistical region> has GDP per capita reported in <currency>",
+    "reverse_relation": "<currency> is used for GDP per capita reporting in <statistical region>"
+  },
+  "/location/statistical_region/gdp_real./measurement_unit/adjusted_money_value/adjustment_currency": {
+    "description": "Indicates the currency used as the adjustment basis for real GDP values in a statistical region.",
+    "head_relation_tail": "<statistical region> has real GDP adjusted using <currency>",
+    "reverse_relation": "<currency> is used for real GDP adjustment in <statistical region>"
+  },
+  "/location/statistical_region/gni_per_capita_in_ppp_dollars./measurement_unit/dated_money_value/currency": {
+    "description": "Indicates the currency used for reporting GNI per capita in PPP terms for a statistical region.",
+    "head_relation_tail": "<statistical region> has GNI per capita (PPP) reported in <currency>",
+    "reverse_relation": "<currency> is used for GNI per capita (PPP) reporting in <statistical region>"
+  },
+  "/location/statistical_region/places_exported_to./location/imports_and_exports/exported_to": {
+    "description": "Indicates the destination countries or regions to which a statistical region exports goods or services.",
+    "head_relation_tail": "<statistical region> exports goods to <destination>",
+    "reverse_relation": "<destination> receives exports from <statistical region>"
+  },
+  "/location/statistical_region/religions./location/religion_percentage/religion": {
+    "description": "Indicates the religions practiced within a statistical region as part of population composition data.",
+    "head_relation_tail": "<statistical region> has religion <religion>",
+    "reverse_relation": "<religion> is practiced in <statistical region>"
+  },
+  "/location/statistical_region/rent50_2./measurement_unit/dated_money_value/currency": {
+    "description": "Indicates the currency used for reporting the median rent (50th percentile) metric for a statistical region.",
+    "head_relation_tail": "<statistical region> has median rent reported in <currency>",
+    "reverse_relation": "<currency> is used for median rent reporting in <statistical region>"
+  },
+  "/location/us_county/county_seat": {
+    "description": "Indicates the administrative center (county seat) of a U.S. county.",
+    "head_relation_tail": "<county> has county seat <city>",
+    "reverse_relation": "<city> is the county seat of <county>"
+  },
+  "/media_common/netflix_genre/titles": {
+    "description": "Connects a Netflix genre to the titles (movies or shows) that belong to it.",
+    "head_relation_tail": "<genre> includes title <film or show>",
+    "reverse_relation": "<film or show> belongs to <genre>"
+  },
+  "/medicine/disease/notable_people_with_this_condition": {
+    "description": "Links a medical condition to notable individuals who are known to have it.",
+    "head_relation_tail": "<condition> has notable person <person>",
+    "reverse_relation": "<person> is associated with <condition>"
+  },
+  "/medicine/disease/risk_factors": {
+    "description": "Indicates factors that increase the likelihood of developing a disease.",
+    "head_relation_tail": "<disease> has risk factor <factor>",
+    "reverse_relation": "<factor> increases risk of <disease>"
+  },
+  "/medicine/symptom/symptom_of": {
+    "description": "Indicates that a symptom is associated with a medical condition.",
+    "head_relation_tail": "<symptom> is symptom of <disease>",
+    "reverse_relation": "<disease> presents symptom <symptom>"
+  },
+  "/military/military_combatant/military_conflicts./military/military_combatant_group/combatants": {
+    "description": "Connects a military conflict entity to the combatant groups or states involved in that conflict.",
+    "head_relation_tail": "<military conflict or state> has combatant <group or state>",
+    "reverse_relation": "<group or state> participates as combatant in <military conflict>"
+  },
+  "/military/military_conflict/combatants./military/military_combatant_group/combatants": {
+    "description": "Connects a military conflict entity to the combatant groups or states involved in that conflict.",
+    "head_relation_tail": "<military conflict> has combatant <state or group>",
+    "reverse_relation": "<state or group> participates as combatant in <military conflict>"
+  },
+  "/music/artist/contribution./music/recording_contribution/performance_role": {
+    "description": "Indicates the performance role an artist contributed in a musical recording.",
+    "head_relation_tail": "<artist> performed as <role>",
+    "reverse_relation": "<role> was performed by <artist>"
+  },
+  "/music/artist/origin": {
+    "description": "Indicates the place where a music artist originates from.",
+    "head_relation_tail": "<artist> originates from <location>",
+    "reverse_relation": "<location> is the origin of <artist>"
+  },
+  "/music/artist/track_contributions./music/track_contribution/role": {
+    "description": "Indicates the role an artist played in contributing to a music track.",
+    "head_relation_tail": "<artist> contributed to track as <role>",
+    "reverse_relation": "<role> was performed on track by <artist>"
+  },
+  "/music/genre/artists": {
+    "description": "Connects a music genre to artists associated with that genre.",
+    "head_relation_tail": "<genre> includes artist <artist>",
+    "reverse_relation": "<artist> is associated with <genre>"
+  },
+  "/music/genre/parent_genre": {
+    "description": "Indicates the broader parent genre of a music genre.",
+    "head_relation_tail": "<genre> is a subgenre of <parent genre>",
+    "reverse_relation": "<parent genre> includes subgenre <genre>"
+  },
+  "/music/group_member/membership./music/group_membership/group": {
+    "description": "Connects a musician to a musical group or collective they are a member of.",
+    "head_relation_tail": "<musician> is member of <music group>",
+    "reverse_relation": "<music group> has member <musician>"
+  },
+  "/music/group_member/membership./music/group_membership/role": {
+    "description": "Indicates the role a musician has within a musical group membership.",
+    "head_relation_tail": "<musician> has role <instrument or function> in group",
+    "reverse_relation": "role <instrument or function> in group is performed by <musician>"
+  },
+  "/music/instrument/family": {
+    "description": "Indicates the instrument family to which a musical instrument belongs.",
+    "head_relation_tail": "<instrument> belongs to <instrument family>",
+    "reverse_relation": "<instrument family> includes <instrument>"
+  },
+  "/music/instrument/instrumentalists": {
+    "description": "Connects a musical instrument to notable instrumentalists who play it.",
+    "head_relation_tail": "<instrument> is played by <musician>",
+    "reverse_relation": "<musician> plays <instrument>"
+  },
+  "/music/performance_role/guest_performances./music/recording_contribution/performance_role": {
+    "description": "Links a performance role to guest performances in musical recordings where that role is credited.",
+    "head_relation_tail": "<performance role> appears in <guest performances>",
+    "reverse_relation": "<guest performance> uses <performance role>"
+  },
+  "/music/performance_role/regular_performances./music/group_membership/group": {
+    "description": "Connects a musical performance role to groups where that role is regularly performed by members.",
+    "head_relation_tail": "<performance role> is regular role in <music group>",
+    "reverse_relation": "<music group> has members performing <performance role>"
+  },
+  "/music/performance_role/regular_performances./music/group_membership/role": {
+    "description": "Indicates the performance role associated with regular membership contributions in a musical group.",
+    "head_relation_tail": "<performance role> is associated with group members performing as <role>",
+    "reverse_relation": "<role> is performed by group members in <performance role>"
+  },
+  "/music/performance_role/track_performances./music/track_contribution/role": {
+    "description": "Links a performance role to specific roles used in track-level musical contributions.",
+    "head_relation_tail": "<performance role> appears as <role> in track contributions",
+    "reverse_relation": "<role> is performed under <performance role>"
+  },
+  "/music/record_label/artist": {
+    "description": "Connects a record label to the musical artists signed to or associated with it.",
+    "head_relation_tail": "<record label> represents <artist>",
+    "reverse_relation": "<artist> is signed to <record label>"
+  },
+  "/olympics/olympic_games/medals_awarded./olympics/olympic_medal_honor/medal": {
+    "description": "Connects an Olympic Games edition to the types of medals awarded during that event.",
+    "head_relation_tail": "<Olympic Games> awards <medal type>",
+    "reverse_relation": "<medal type> is awarded at <Olympic Games>"
+  },
+  "/olympics/olympic_games/participating_countries": {
+    "description": "Connects an Olympic Games edition to the countries that participate in the event.",
+    "head_relation_tail": "<Olympic Games> includes participating country <country>",
+    "reverse_relation": "<country> participates in <Olympic Games>"
+  },
+  "/olympics/olympic_games/sports": {
+    "description": "Connects an Olympic Games edition to the sports contested during that edition.",
+    "head_relation_tail": "<Olympic Games> includes sport <sport>",
+    "reverse_relation": "<sport> is contested at <Olympic Games>"
+  },
+  "/olympics/olympic_participating_country/athletes./olympics/olympic_athlete_affiliation/olympics": {
+    "description": "Connects a country to Olympic Games editions through its athletes who participated in those events.",
+    "head_relation_tail": "<country> has athletes participating in <Olympic Games>",
+    "reverse_relation": "<Olympic Games> includes athletes from <country>"
+  },
+  "/olympics/olympic_participating_country/medals_won./olympics/olympic_medal_honor/medal": {
+    "description": "Connects an Olympic participating country to the types of medals it has won.",
+    "head_relation_tail": "<country> has won <medal type> medal",
+    "reverse_relation": "<medal type> medals are won by <country>"
+  },
+  "/olympics/olympic_participating_country/medals_won./olympics/olympic_medal_honor/olympics": {
+    "description": "Connects an Olympic medal honor to the Olympic Games edition where the medal was awarded.",
+    "head_relation_tail": "<country> won medals at <Olympic Games>",
+    "reverse_relation": "<Olympic Games> awarded medals to <country>"
+  },
+  "/olympics/olympic_sport/athletes./olympics/olympic_athlete_affiliation/country": {
+    "description": "Connects an Olympic sport to athletes participating under a specific country affiliation.",
+    "head_relation_tail": "<sport> has athletes representing <country>",
+    "reverse_relation": "<country> has athletes competing in <sport>"
+  },
+  "/olympics/olympic_sport/athletes./olympics/olympic_athlete_affiliation/olympics": {
+    "description": "Connects an Olympic sport to the Olympic Games editions in which athletes participate in that sport.",
+    "head_relation_tail": "<sport> has athletes competing at <Olympic Games>",
+    "reverse_relation": "<Olympic Games> includes competitions in <sport>"
+  },
+  "/organization/endowed_organization/endowment./measurement_unit/dated_money_value/currency": {
+    "description": "Indicates the currency used to measure an organization's endowment value.",
+    "head_relation_tail": "<organization endowment> is measured in <currency>",
+    "reverse_relation": "<currency> is used to measure endowment of <organization>"
+  },
+  "/organization/non_profit_organization/registered_with./organization/non_profit_registration/registering_agency": {
+    "description": "Connects a non-profit organization to the agency responsible for its official registration.",
+    "head_relation_tail": "<non-profit organization> is registered with <registering agency>",
+    "reverse_relation": "<registering agency> registers <non-profit organization>"
+  },
+  "/organization/organization/child./organization/organization_relationship/child": {
+    "description": "Connects a parent organization to its subsidiary organization.",
+    "head_relation_tail": "<parent organization> has child organization <subsidiary organization>",
+    "reverse_relation": "<subsidiary organization> is child of <parent organization>"
+  },
+  "/organization/organization/headquarters./location/mailing_address/citytown": {
+    "description": "Connects an organization to the city where its headquarters is located.",
+    "head_relation_tail": "<organization> has headquarters in <city>",
+    "reverse_relation": "<city> hosts headquarters of <organization>"
+  },
+  "/organization/organization/headquarters./location/mailing_address/country": {
+    "description": "Connects an organization to the country where its headquarters is located.",
+    "head_relation_tail": "<organization> has headquarters in <country>",
+    "reverse_relation": "<country> hosts headquarters of <organization>"
+  },
+  "/organization/organization/headquarters./location/mailing_address/state_province_region": {
+    "description": "Connects an organization to the state or region where its headquarters is located.",
+    "head_relation_tail": "<organization> has headquarters in <state or region>",
+    "reverse_relation": "<state or region> hosts headquarters of <organization>"
+  },
+  "/organization/organization/place_founded": {
+    "description": "Connects an organization to the place where it was founded.",
+    "head_relation_tail": "<organization> was founded in <place>",
+    "reverse_relation": "<place> is the founding location of <organization>"
+  },
+  "/organization/organization_founder/organizations_founded": {
+    "description": "Connects a founder to organizations they have founded.",
+    "head_relation_tail": "<founder> founded <organization>",
+    "reverse_relation": "<organization> was founded by <founder>"
+  },
+  "/organization/organization_member/member_of./organization/organization_membership/organization": {
+    "description": "Connects a member entity to an organization it belongs to.",
+    "head_relation_tail": "<member> is member of <organization>",
+    "reverse_relation": "<organization> has member <member>"
+  },
+  "/organization/role/leaders./organization/leadership/organization": {
+    "description": "Connects a leadership role to an organization where that role exists.",
+    "head_relation_tail": "<role> is leadership position in <organization>",
+    "reverse_relation": "<organization> has leadership role <role>"
+  },
+  "/people/cause_of_death/people": {
+    "description": "Connects a cause of death to a person who died from it.",
+    "head_relation_tail": "<cause of death> is cause of death of <person>",
+    "reverse_relation": "<person> died from <cause of death>"
+  },
+  "/people/deceased_person/place_of_burial": {
+    "description": "Connects a deceased person to their burial location.",
+    "head_relation_tail": "<deceased person> is buried at <burial place>",
+    "reverse_relation": "<burial place> is burial site of <deceased person>"
+  },
+  "/people/deceased_person/place_of_death": {
+    "description": "Connects a deceased person to the place where they died.",
+    "head_relation_tail": "<deceased person> died in <place>",
+    "reverse_relation": "<place> is place of death of <deceased person>"
+  },
+  "/people/ethnicity/geographic_distribution": {
+    "description": "Connects an ethnicity to the geographic areas where it is commonly found.",
+    "head_relation_tail": "<ethnicity> is found in <country>",
+    "reverse_relation": "<country> has population of <ethnicity>"
+  },
+  "/people/ethnicity/languages_spoken": {
+    "description": "Connects an ethnicity to the languages commonly spoken by that group.",
+    "head_relation_tail": "<ethnicity> speaks <language>",
+    "reverse_relation": "<language> is spoken by <ethnicity>"
+  },
+  "/people/ethnicity/people": {
+    "description": "Connects an ethnicity to people who identify with or belong to that ethnicity.",
+    "head_relation_tail": "<ethnicity> has person <person>",
+    "reverse_relation": "<person> belongs to <ethnicity>"
+  },
+  "/people/marriage_union_type/unions_of_this_type./people/marriage/location_of_ceremony": {
+    "description": "Connects a marriage event to the location where its ceremony takes place.",
+    "head_relation_tail": "<event> has ceremony location <city>",
+    "reverse_relation": "<city> is ceremony location of <event>"
+  },
+  "/people/person/employment_history./business/employment_tenure/company": {
+    "description": "Connects a person to a company where they have worked as part of their employment history.",
+    "head_relation_tail": "<person> works at <organization>",
+    "reverse_relation": "<organization> employs <person>"
+  },
+  "/people/person/gender": {
+    "description": "Indicates the gender of a person.",
+    "head_relation_tail": "<person> has gender <gender>",
+    "reverse_relation": "<gender> describes <person>"
+  },
+  "/people/person/languages": {
+    "description": "Indicates the languages spoken by a person.",
+    "head_relation_tail": "<person> speaks <language>",
+    "reverse_relation": "<language> is spoken by <person>"
+  },
+  "/people/person/nationality": {
+    "description": "Indicates the country or nation of origin of a person.",
+    "head_relation_tail": "<person> has nationality <country>",
+    "reverse_relation": "<country> is nationality of <person>"
+  },
+  "/people/person/place_of_birth": {
+    "description": "Indicates the place where a person was born.",
+    "head_relation_tail": "<person> was born in <country>",
+    "reverse_relation": "<country> is birthplace of <person>"
+  },
+  "/people/person/places_lived./people/place_lived/location": {
+    "description": "Connects a person to a place where they have lived.",
+    "head_relation_tail": "<person> has lived in <city>",
+    "reverse_relation": "<city> has been lived in by <person>"
+  },
+  "/people/person/profession": {
+    "description": "Connects a person to their profession or occupational role.",
+    "head_relation_tail": "<person> has profession <profession>",
+    "reverse_relation": "<profession> is profession of <person>"
+  },
+  "/people/person/religion": {
+    "description": "Indicates the religious affiliation of a person.",
+    "head_relation_tail": "<person> has religion <religion>",
+    "reverse_relation": "<religion> is religion of <person>"
+  },
+  "/people/person/sibling_s./people/sibling_relationship/sibling": {
+    "description": "Connects a person to their sibling.",
+    "head_relation_tail": "<person> has sibling <person>",
+    "reverse_relation": "<person> is sibling of <person>"
+  },
+  "/people/person/spouse_s./people/marriage/location_of_ceremony": {
+    "description": "Connects a marriage event to the location where the ceremony took place.",
+    "head_relation_tail": "<event> has ceremony location <city>",
+    "reverse_relation": "<city> is ceremony location of <event>"
+  },
+  "/people/person/spouse_s./people/marriage/spouse": {
+    "description": "Connects a person to their spouse in a marriage relationship.",
+    "head_relation_tail": "<person> is married to <person>",
+    "reverse_relation": "<person> is married to <person>"
+  },
+  "/people/person/spouse_s./people/marriage/type_of_union": {
+    "description": "Indicates the type of marital union in a person's marriage relationship.",
+    "head_relation_tail": "<person> has marriage type <marriage_type>",
+    "reverse_relation": "<marriage_type> is marriage type of <person>"
+  },
+  "/people/profession/specialization_of": {
+    "description": "Connects a profession to a more specific specialization or subtype of that profession.",
+    "head_relation_tail": "<profession> has specialization <role>",
+    "reverse_relation": "<role> is specialization of <profession>"
+  },
+  "/soccer/football_player/current_team./sports/sports_team_roster/team": {
+    "description": "Connects a football player to the team they currently play for.",
+    "head_relation_tail": "<player> plays for <team>",
+    "reverse_relation": "<team> has player <player>"
+  },
+  "/soccer/football_team/current_roster./soccer/football_roster_position/position": {
+    "description": "Indicates the playing position of a player within a football team's current roster.",
+    "head_relation_tail": "<team> has player position <position>",
+    "reverse_relation": "<position> is played in <team>"
+  },
+  "/soccer/football_team/current_roster./sports/sports_team_roster/position": {
+    "description": "Indicates the playing position of a football player in a national or club team roster.",
+    "head_relation_tail": "<team> has player position <position>",
+    "reverse_relation": "<position> is assigned in <team>"
+  },
+  "/sports/pro_athlete/teams./sports/sports_team_roster/team": {
+    "description": "Connects a professional athlete to the sports team they have played for.",
+    "head_relation_tail": "<athlete> plays for <team>",
+    "reverse_relation": "<team> has athlete <athlete>"
+  },
+  "/sports/professional_sports_team/draft_picks./sports/sports_league_draft_pick/draft": {
+    "description": "Connects a professional sports team to the draft event in which it participated.",
+    "head_relation_tail": "<team> participates in <draft>",
+    "reverse_relation": "<draft> includes <team>"
+  },
+  "/sports/professional_sports_team/draft_picks./sports/sports_league_draft_pick/school": {
+    "description": "Connects a professional sports team’s draft pick history to the school of the drafted player.",
+    "head_relation_tail": "<team> drafts from <school>",
+    "reverse_relation": "<school> produces players for <team>"
+  },
+  "/sports/sport/pro_athletes./sports/pro_sports_played/athlete": {
+    "description": "Connects a sport to professional athletes who play that sport.",
+    "head_relation_tail": "<sport> has professional athlete <person>",
+    "reverse_relation": "<person> plays <sport>"
+  },
+  "/sports/sports_league/teams./sports/sports_league_participation/team": {
+    "description": "Connects a sports league or confederation to the national teams that participate in it.",
+    "head_relation_tail": "<league> has member team <team>",
+    "reverse_relation": "<team> participates in <league>"
+  },
+  "/sports/sports_league_draft/picks./sports/sports_league_draft_pick/school": {
+    "description": "Connects a sports league draft to the school from which a drafted player was selected.",
+    "head_relation_tail": "<draft> selects player from <school>",
+    "reverse_relation": "<school> produces player for <draft>"
+  },
+  "/sports/sports_position/players./american_football/football_historical_roster_position/position_s": {
+    "description": "Connects a American football position category to a specific playing position used in historical football rosters.",
+    "head_relation_tail": "<position category> includes <position>",
+    "reverse_relation": "<position> belongs to <position category>"
+  },
+  "/sports/sports_position/players./sports/sports_team_roster/position": {
+    "description": "Connects a sports position category to a playing position of athletes in a team roster.",
+    "head_relation_tail": "<position category> includes <position>",
+    "reverse_relation": "<position> belongs to <position category>"
+  },
+  "/sports/sports_position/players./sports/sports_team_roster/team": {
+    "description": "Connects a sports position to the team that has players in that position on its roster.",
+    "head_relation_tail": "<position> is found in <team>",
+    "reverse_relation": "<team> has players in <position>"
+  },
+  "/sports/sports_team/colors": {
+    "description": "Indicates the official colors associated with a sports team.",
+    "head_relation_tail": "<team> has color <color>",
+    "reverse_relation": "<color> is color of <team>"
+  },
+  "/sports/sports_team/roster./american_football/football_historical_roster_position/position_s": {
+    "description": "Connects an American college football team to a player position that has been part of its historical roster, specifically describing positions such as running back within American football. This relation is used in the context of U.S. football programs like NCAA teams.",
+    "head_relation_tail": "<american football team> includes players in position <football position>",
+    "reverse_relation": "<football position> is played in <american football team>"
+  },
+  "/sports/sports_team/roster./american_football/football_roster_position/position": {
+    "description": "Connects a American football team to the playing position of athletes on its roster.",
+    "head_relation_tail": "<team> has player position <position>",
+    "reverse_relation": "<position> is played in <team>"
+  },
+  "/sports/sports_team/roster./baseball/baseball_roster_position/position": {
+    "description": "Connects a baseball team to the playing position of athletes on its roster.",
+    "head_relation_tail": "<team> has player position <position>",
+    "reverse_relation": "<position> is played in <team>"
+  },
+  "/sports/sports_team/roster./basketball/basketball_roster_position/position": {
+    "description": "Connects a basketball team (NBA) to the playing position of athletes listed on its roster, such as power forward, within the league structure.",
+    "head_relation_tail": "<team> has player position <position>",
+    "reverse_relation": "<position> is played in <team>"
+  },
+  "/sports/sports_team/sport": {
+    "description": "Connects a sports team (such as a football club) to the type of sport it participates in, such as association football (soccer).",
+    "head_relation_tail": "<team> participates in <sport>",
+    "reverse_relation": "<sport> is played by <team>"
+  },
+  "/sports/sports_team_location/teams": {
+    "description": "Connects a sports team to the city or location where the team is based or represents, including professional leagues like the NBA.",
+    "head_relation_tail": "<team> is based in <city>",
+    "reverse_relation": "<city> hosts <team>"
+  },
+  "/time/event/instance_of_recurring_event": {
+    "description": "Connects a specific event instance to the recurring event series it belongs to, such as an annual award ceremony.",
+    "head_relation_tail": "<event instance> is an instance of <recurring event>",
+    "reverse_relation": "<recurring event> has instance <event instance>"
+  },
+  "/time/event/locations": {
+    "description": "Connects a historical or recurring event to the geographical locations where it took place or had significant activity.",
+    "head_relation_tail": "<event> occurred in <location>",
+    "reverse_relation": "<location> was a location of <event>"
+  },
+  "/travel/travel_destination/climate./travel/travel_destination_monthly_climate/month": {
+    "description": "Connects a travel destination to a specific month in its monthly climate profile, describing seasonal weather conditions for that period.",
+    "head_relation_tail": "<destination> has climate condition in <month>",
+    "reverse_relation": "<month> describes climate of <destination>"
+  },
+  "/travel/travel_destination/how_to_get_here./travel/transportation/mode_of_transportation": {
+    "description": "Connects a travel destination to available transportation methods used to reach it, such as train, flight, or bus.",
+    "head_relation_tail": "<destination> can be reached by <transport mode>",
+    "reverse_relation": "<transport mode> is used to reach <destination>"
+  },
+  "/tv/non_character_role/tv_regular_personal_appearances./tv/tv_regular_personal_appearance/person": {
+    "description": "Connects a TV non-character role (such as contestant, guest, or participant) to the person who appears in that role on a television program.",
+    "head_relation_tail": "<tv role> is performed by <person>",
+    "reverse_relation": "<person> appears as <tv role>"
+  },
+  "/tv/tv_network/programs./tv/tv_network_duration/program": {
+    "description": "Connects a television network (such as ABC) to TV programs that have been broadcast or aired by that network.",
+    "head_relation_tail": "<tv network> broadcasts <tv program>",
+    "reverse_relation": "<tv program> is broadcast by <tv network>"
+  },
+  "/tv/tv_personality/tv_regular_appearances./tv/tv_regular_personal_appearance/program": {
+    "description": "Connects a TV personality to a television program in which they make a regular appearance or participate, such as a competition or reality show.",
+    "head_relation_tail": "<tv personality> appears on <tv program>",
+    "reverse_relation": "<tv program> features <tv personality>"
+  },
+  "/tv/tv_producer/programs_produced./tv/tv_producer_term/producer_type": {
+    "description": "Connects a TV producer to the type of production role they held on television programs, such as executive producer, indicating their level of responsibility in TV production.",
+    "head_relation_tail": "<producer> works as <producer type>",
+    "reverse_relation": "<producer type> is a role held by <producer>"
+  },
+  "/tv/tv_producer/programs_produced./tv/tv_producer_term/program": {
+    "description": "Connects a television production company (such as a studio or producer) to the TV programs it has produced or contributed to, including animated and live-action series.",
+    "head_relation_tail": "<production company> produces <tv program>",
+    "reverse_relation": "<tv program> is produced by <production company>"
+  },
+  "/tv/tv_program/country_of_origin": {
+    "description": "Connects a television program (including sitcoms, dramas, and other TV series) to the country where it was originally produced or originated.",
+    "head_relation_tail": "<tv program> originates from <country>",
+    "reverse_relation": "<country> is origin of <tv program>"
+  },
+  "/tv/tv_program/genre": {
+    "description": "Connects a television program (such as an animated series, sitcom, or drama) to its genre classification, describing the style or thematic category of the show.",
+    "head_relation_tail": "<tv program> belongs to <genre>",
+    "reverse_relation": "<genre> includes <tv program>"
+  },
+  "/tv/tv_program/languages": {
+    "description": "Connects a television program to the primary language(s) used in its dialogue and production, typically reflecting the language of broadcast.",
+    "head_relation_tail": "<tv program> is in <language>",
+    "reverse_relation": "<language> is used in <tv program>"
+  },
+  "/tv/tv_program/program_creator": {
+    "description": "Connects a television program (including animated or live-action series) to the person who created or developed it.",
+    "head_relation_tail": "<tv program> is created by <creator>",
+    "reverse_relation": "<creator> created <tv program>"
+  },
+  "/tv/tv_program/regular_cast./tv/regular_tv_appearance/actor": {
+    "description": "Connects a television program to an actor who is part of its regular cast, including voice actors in animated series or live-action performers.",
+    "head_relation_tail": "<tv program> features <actor>",
+    "reverse_relation": "<actor> appears in <tv program>"
+  },
+  "/tv/tv_program/tv_producer./tv/tv_producer_term/producer_type": {
+    "description": "Connects a television program (such as a sitcom or series) to the type of producer role involved in its production, such as executive producer, showrunner, or co-producer.",
+    "head_relation_tail": "<tv program> has <producer type>",
+    "reverse_relation": "<producer type> is involved in <tv program>"
+  },
+  "/tv/tv_writer/tv_programs./tv/tv_program_writer_relationship/tv_program": {
+    "description": "Connects a television writer to a TV program they have contributed to, including animated series and live-action shows.",
+    "head_relation_tail": "<writer> writes for <tv program>",
+    "reverse_relation": "<tv program> is written by <writer>"
+  },
+  "/user/alexander/philosophy/philosopher/interests": {
+    "description": "Connects a philosopher to a field of philosophical interest or area of study they focus on, such as epistemology, ethics, or metaphysics.",
+    "head_relation_tail": "<philosopher> studies <philosophical field>",
+    "reverse_relation": "<philosophical field> is studied by <philosopher>"
+  },
+  "/user/jg/default_domain/olympic_games/sports": {
+    "description": "Connects an edition of the Olympic Games to a sport or discipline that was included in its competition program, such as show jumping in equestrian events.",
+    "head_relation_tail": "<olympic games> includes <sport>",
+    "reverse_relation": "<sport> is included in <olympic games>"
+  },
+  "/user/ktrueman/default_domain/international_organization/member_states": {
+    "description": "Connects an international organization (such as the European Union) to its member states that belong to the organization.",
+    "head_relation_tail": "<international organization> includes <country>",
+    "reverse_relation": "<country> is member of <international organization>"
+  },
+  "/user/tsegaran/random/taxonomy_subject/entry./user/tsegaran/random/taxonomy_entry/taxonomy": {
+    "description": "Connects a subject or entity to a classification system used to categorize knowledge domains, such as the Library of Congress Classification.",
+    "head_relation_tail": "<subject> is classified under <taxonomy>",
+    "reverse_relation": "<taxonomy> classifies <subject>"
+  }
+}
